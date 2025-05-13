@@ -135,6 +135,7 @@ export class AuthService implements OnDestroy {
       }
       this.token = localStorage.getItem('token');
       this.user =  JSON.parse(lsValue);
+      
       const authData =this.user;
       return authData;
     } catch (error) {
